@@ -4,7 +4,7 @@ import styled from '@emotion/styled';
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
-    backgroundColor: "#04AA6D",
+    backgroundColor: "#1B74E4",
     color: "white",
   },
   [`&.${tableCellClasses.body}`]: {
@@ -56,8 +56,8 @@ export const Feed = () => {
       </Card> */}
 
 
-      <Box m={4} sx={{width: "100%"}} >
-        <Typography sx={{ fontSize: "20px", fontWeight: "400", lineHeight: "32px", backgroundColor: "blue",  borderRadius: "10px", padding: "15px", color: "white", width: "350px" }} >
+      {/* <Box m={4} sx={{width: "100%"}} >
+        <Typography sx={{ fontSize: "20px", fontWeight: "400", lineHeight: "32px", backgroundColor: "#04AA6D",  borderRadius: "10px", padding: "15px", color: "white", width: "350px" }} >
           Nhân viên thiếu giờ làm trong tháng 5
         </Typography>
 
@@ -85,8 +85,100 @@ export const Feed = () => {
           </Table>
         </TableContainer>
 
+      </Box> */}
+
+      <Box m={4} sx={{width: "100%"}} >
+        <Typography sx={{ fontFamily:"'Source Sans Pro', sans-serif", fontSize: "18px", fontWeight: "400", lineHeight: "18px", backgroundColor: "#04AA6D",  borderRadius: "25px", padding: "15px", color: "white", width: "310px", marginBottom: "10px" }} >
+          Nhân viên thiếu giờ làm trong tháng 5
+        </Typography>
+
+        <TableContainer component={Paper} >
+          <Table  aria-label="customized table" >
+            <TableHead>
+              <TableRow>
+                <StyledTableCell>Id</StyledTableCell>
+                <StyledTableCell align="center">Name</StyledTableCell>
+                <StyledTableCell align="center">Total Working</StyledTableCell>
+              </TableRow>
+            </TableHead>
+            <TableBody>
+              {rows.map((row) => (
+                <StyledTableRow key={row.id}>
+                  <StyledTableCell component="th" scope="row" >
+                    {row.id}
+                  </StyledTableCell>
+                  <StyledTableCell align="center">{row.name}</StyledTableCell>
+                  <StyledTableCell align="center" sx={{color: "red"}}>{row.TotalWorking}</StyledTableCell>
+
+                </StyledTableRow>
+              ))}
+            </TableBody>
+          </Table>
+        </TableContainer>
+
       </Box>
 
+      <Box m={4} sx={{width: "100%"}} >
+        <Typography sx={{ fontFamily:"'Source Sans Pro', sans-serif", fontSize: "18px", fontWeight: "400", lineHeight: "18px", backgroundColor: "#04AA6D",  borderRadius: "25px", padding: "15px", color: "white", width: "310px", marginBottom: "10px" }} >
+        Nhân viên xin nghỉ trong 7 ngày tới
+        </Typography>
+
+        <TableContainer component={Paper} >
+          <Table  aria-label="customized table" >
+            <TableHead>
+              <TableRow>
+                <StyledTableCell>Id</StyledTableCell>
+                <StyledTableCell align="center">Name</StyledTableCell>
+                <StyledTableCell align="center">Day Off</StyledTableCell>
+              </TableRow>
+            </TableHead>
+            <TableBody>
+              {rows.map((row) => (
+                <StyledTableRow key={row.id}>
+                  <StyledTableCell component="th" scope="row" >
+                    {row.id}
+                  </StyledTableCell>
+                  <StyledTableCell align="center">{row.name}</StyledTableCell>
+                  <StyledTableCell align="center" sx={{color: "red"}}>{row.TotalWorking}</StyledTableCell>
+
+                </StyledTableRow>
+              ))}
+            </TableBody>
+          </Table>
+        </TableContainer>
+
+      </Box>
+
+      <Box m={4} sx={{width: "100%"}} >
+        <Typography sx={{ fontFamily:"'Source Sans Pro', sans-serif", fontSize: "18px", fontWeight: "400", lineHeight: "18px", backgroundColor: "#04AA6D",  borderRadius: "25px", padding: "15px", color: "white", width: "200px", marginBottom: "10px" }} >
+        Intern đi làm trong ngày
+        </Typography>
+
+        <TableContainer component={Paper} >
+          <Table  aria-label="customized table" >
+            <TableHead>
+              <TableRow>
+                <StyledTableCell>Id</StyledTableCell>
+                <StyledTableCell align="center">Name</StyledTableCell>
+                <StyledTableCell align="center">Day Working</StyledTableCell>
+              </TableRow>
+            </TableHead>
+            <TableBody>
+              {rows.map((row) => (
+                <StyledTableRow key={row.id}>
+                  <StyledTableCell component="th" scope="row" >
+                    {row.id}
+                  </StyledTableCell>
+                  <StyledTableCell align="center">{row.name}</StyledTableCell>
+                  <StyledTableCell align="center" sx={{color: "red"}}>{row.TotalWorking}</StyledTableCell>
+
+                </StyledTableRow>
+              ))}
+            </TableBody>
+          </Table>
+        </TableContainer>
+
+      </Box>
     </Box>
   )
 }

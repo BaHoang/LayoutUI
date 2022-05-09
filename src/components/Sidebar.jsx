@@ -33,7 +33,7 @@ export const Sidebar = () => {
                 
               </ListItemIcon >
 
-              <ListItemText primary="Dashboard" primaryTypographyProps={{fontSize: '1.5rem'}}  />
+              <ListItemText primary="Dashboard" primaryTypographyProps={{fontSize: '20px'}}  />
               
             </ListItemButton>
 
@@ -44,7 +44,7 @@ export const Sidebar = () => {
               <ListItemIcon>
                 <DraftsIcon sx={{ color: 'rgb(0,0,0)', fontSize: "2rem" }} />
               </ListItemIcon>
-              <ListItemText primary="Personnel" primaryTypographyProps={{fontSize: '1.5rem'}} />
+              <ListItemText primary="Personnel" primaryTypographyProps={{fontSize: '20px'}} />
             </ListItemButton>
           </ListItem>
 
@@ -53,7 +53,7 @@ export const Sidebar = () => {
               <ListItemIcon>
                 <DraftsIcon sx={{ color: 'rgb(0,0,0)', fontSize: "2rem" }} />
               </ListItemIcon>
-              <ListItemText primary="Data Attendence" primaryTypographyProps={{fontSize: '1.5rem'}} />
+              <ListItemText primary="Data Attendence" primaryTypographyProps={{fontSize: '20px'}} />
             </ListItemButton>
           </ListItem>
 
@@ -62,7 +62,7 @@ export const Sidebar = () => {
               <ListItemIcon>
                 <DraftsIcon sx={{ color: 'rgb(0,0,0)', fontSize: "2rem" }} />
               </ListItemIcon>
-              <ListItemText primary="Setting" primaryTypographyProps={{fontSize: '1.5rem'}} />
+              <ListItemText primary="Setting" primaryTypographyProps={{fontSize: '20px'}} />
             </ListItemButton>
           </ListItem>
 
@@ -71,7 +71,7 @@ export const Sidebar = () => {
               <ListItemIcon>
                 <DraftsIcon sx={{ color: 'rgb(0,0,0)', fontSize: "2rem" }} />
               </ListItemIcon>
-              <ListItemText primary="Approve" primaryTypographyProps={{fontSize: '1.5rem'}} />
+              <ListItemText primary="Approve" primaryTypographyProps={{fontSize: '20px'}} />
             </ListItemButton>
           </ListItem>
 
@@ -80,7 +80,7 @@ export const Sidebar = () => {
               <ListItemIcon>
                 <DraftsIcon sx={{ color: 'rgb(0,0,0)', fontSize: "2rem" }} />
               </ListItemIcon>
-              <ListItemText primary="Privilege" primaryTypographyProps={{fontSize: '1.5rem'}} />
+              <ListItemText primary="Privilege" primaryTypographyProps={{fontSize: '20px'}} />
             </ListItemButton>
           </ListItem>
         </List>
