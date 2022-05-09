@@ -22,7 +22,7 @@ const StyledListItem = styled(ListItem)({
 export const Sidebar = () => {
   return (
     <Box bgcolor="#E7E9EB" width="20%" sx={{ display: { xs: "none", sm: "none", md: "block" } }}>
-      <Box position="fixed" sx={{ width: "20%" }}>
+      <Box position="fixed" sx={{ width: "20%" }} >
         <List >
           <StyledListItem disablePadding selected sx={{height: "70px"}}>
 
